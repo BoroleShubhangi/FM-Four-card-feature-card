@@ -47,6 +47,7 @@ p {
 }
 .orange-card {
   border-top: 3px solid var(--Orange);
+  transform: translateY(50%);
 }
 .red-card {
   border-top: 3px solid var(--Red);
@@ -56,9 +57,10 @@ p {
 }
 .cyan-card {
   border-top: 3px solid var(--Cyan);
+  transform: translateY(50%);
 }
 
-.background-style {
+.card-bg {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background-color: var(--Light-Gray);
@@ -67,12 +69,11 @@ p {
   margin: 15px;
   overflow: hidden;
 }
+
+
 .image {
   display: block;
   margin-left: auto;
-}
-.transform {
-  transform: translateY(50%);
 }
 a:hover{
   text-decoration: underline;
@@ -87,8 +88,11 @@ a:hover{
   font-weight: bold;
 }
 
-@media(max-width:768px){
-  .transform{
-    transform: translateY(0%);
-  }
+@media(max-width:768px) {
+.cyan-card{
+  transform: translateY(0%);
+}
+.orange-card{
+  transform: translateY(0%);
+}
 }
